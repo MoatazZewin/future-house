@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
@@ -24,9 +28,15 @@
           <li class="active"><a href="#">home</a></li>
           <li><a href="#">about us</a></li>
           <li>
-            <a href="#" class="project"
+            <a href="#" class="projects-list"
               >projects <i class="fa-solid fa-chevron-down"></i
             ></a>
+
+            <ul class="s-list">
+              <li>project 1</li>
+              <li>project 2</li>
+              <li>project 3</li>
+            </ul>
           </li>
           <li><a href="#">contact</a></li>
           <li><a href="#">0111654985</a></li>
@@ -34,6 +44,7 @@
         <button id="btn-toggle" data-expanded="false" aria-expanded="false">
           <span class="nav-toggler-icon"> </span>
         </button>
+        <a href="#" class="lang">AR</a>
       </div>
     </header>
     <!-- End header -->
@@ -57,42 +68,79 @@
         </div>
 
         <!-- Pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
     <!-- End banner -->
 
-    <!-- Start our expert section -->
-    <div class="expert">
-      <div class="container">
-        <h3>our expert and experience</h3>
-        <div class="content">
-          <figure>
-            <img src="images/expert-1.png" alt="image" />
-            <figcaption>PROPERTY AND FACILITIES MANAGEMENT</figcaption>
-          </figure>
-          <figure>
-            <img src="images/expert-3.png" alt="image" />
-            <figcaption>MARKETING</figcaption>
-          </figure>
-          <figure>
-            <img src="images/expert-2.png" alt="image" />
-            <figcaption>VALUATION</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <!-- End our expert section -->
-
     <!-- Start project section -->
     <div class="project">
-      <div class="container">
-        <h3>our projects</h3>
-        <div class="content">
-          <img src="images/project-1.png" alt="photo" />
-          <img src="images/project-2.png" alt="photo" />
-          <img src="images/project-3.png" alt="photo" />
+      <div class="content">
+        <div class="container">
+          <h3 data-aos="fadeInUp" data-aos-easing="ease">Our Project</h3>
+          <div class="index-proj">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
+              <div>
+                <img src="images/about-us-1.png" alt="photo" />
+              </div>
+            </div>
+            <div class="right" data-aos="fade-up" data-aos-duration="1000">
+              <h4>Project one</h4>
+              <p>
+                Future House Investment and Real Estate Development Company
+                owned by Engineer Romany Andraws, is a pioneering force in
+                Egypt's real estate development sector. Established in 2008, our
+                mission is to deliver luxurious sustainablelifestyles through a
+                diverse portfolio of projects.
+              </p>
+              <a href="#">read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="index-proj reverse">
+          <div class="container">
+            <div class="left" data-aos="fade-right" data-aos-duration="3000">
+              <div>
+                <img src="images/about-us-1.png" alt="photo" />
+              </div>
+            </div>
+            <div class="right" data-aos="fade-up" data-aos-duration="2000">
+              <h4>Project one</h4>
+              <p>
+                Future House Investment and Real Estate Development Company
+                owned by Engineer Romany Andraws, is a pioneering force in
+                Egypt's real estate development sector. Established in 2008, our
+                mission is to deliver luxurious sustainablelifestyles through a
+                diverse portfolio of projects.
+              </p>
+              <a href="#">read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="index-proj">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
+              <div>
+                <img src="images/about-us-1.png" alt="photo" />
+              </div>
+            </div>
+            <div class="right" data-aos="fade-left" data-aos-duration="1000">
+              <h4>Project one</h4>
+              <p>
+                Future House Investment and Real Estate Development Company
+                owned by Engineer Romany Andraws, is a pioneering force in
+                Egypt's real estate development sector. Established in 2008, our
+                mission is to deliver luxurious sustainablelifestyles through a
+                diverse portfolio of projects.
+              </p>
+              <a href="#">read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -127,6 +175,48 @@
 
     <!-- Start footer section -->
     <div class="footer">
+      <div class="content">
+        <img src="/images/logo1.png" alt="logo" />
+        <p>
+          contact us today to explore our services and take advantage of the
+          great deals available from the leading solar and cable companies in
+          the DC, maryland, and virginia area. let us be your trusted partner in
+          finding the best solutions for your energy and connectivity needs.
+        </p>
+      </div>
+      <div class="quick-link">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="{{url('/')}}">home</a></li>
+          <li><a href="{{url('about')}}">about us</a></li>
+          <li><a href="{{url('contact')}}">contact</a></li>
+        </ul>
+      </div>
+      <div class="services">
+        <h4>Services</h4>
+        <ul>
+          <li>solar solution</li>
+          <li>cable services</li>
+          <li>deals and promotions</li>
+          <li>consultation and support</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 010 00 000 000</li>
+          <li><i class="fa-regular fa-envelope"></i> info@future-house.com</li>
+          <li><i class="fa-brands fa-facebook"> </i> fb/future-house</li>
+          <li><i class="fa-brands fa-twitter"></i> tw/future-house</li>
+          <li><i class="fa-brands fa-instagram"> </i>ins/future-house</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-end">2025 PROMTEC Company</div>
+    <!-- End footer section -->
+    <!-- Start footer section -->
+    <!-- <div class="footer">
       <div class="content">
         <img src="images/logo-footer.png" alt="logo" />
         <p>
@@ -170,10 +260,11 @@
       </div>
     </div>
 
-    <div class="footer-end">2023 company</div>
+    <div class="footer-end">2023 company</div> -->
     <!-- End footer section -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
