@@ -6,22 +6,22 @@ btnToggle.addEventListener("click", () => {
   headerList.classList.toggle("show");
 });
 
-// const swiper = new Swiper(".swiper", {
-//   direction: "horizontal",
-//   loop: true,
-//   slidesPerView: 1,
-//   spaceBetween: 10,
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
 
-//   autoplay: {
-//     delay: 2000, // Auto-slide every 3 seconds
-//     disableOnInteraction: false, // Keep autoplay after interaction
-//     reverseDirection: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next", // Next button
-//     prevEl: ".swiper-button-prev", // Previous button
-//   },
-// });
+  autoplay: {
+    delay: 2000, // Auto-slide every 3 seconds
+    disableOnInteraction: false, // Keep autoplay after interaction
+    reverseDirection: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Next button
+    prevEl: ".swiper-button-prev", // Previous button
+  },
+});
 
 let headerSection = document.getElementsByTagName("header")[0];
 let anchorLink = [...document.querySelectorAll("ul#header-list li a")];
