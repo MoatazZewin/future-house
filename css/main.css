@@ -485,7 +485,7 @@ header button[aria-expanded="true"] span::after {
 }
 
 .project .content .index-proj h4 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .project .content .index-proj.reverse {
@@ -532,7 +532,7 @@ header button[aria-expanded="true"] span::after {
 
 .project .content .index-proj .right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   padding-bottom: 40px;
   gap: 10px;
@@ -1234,6 +1234,10 @@ header button[aria-expanded="true"] span::after {
   font-size: 4rem;
   color: var(--main-color);
   line-height: 1;
+}
+
+.content-project .project-description ul li:first-child::after {
+  margin-inline-start: 10px;
 }
 
 @media (max-width: 600px) {
