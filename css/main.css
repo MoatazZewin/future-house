@@ -56,6 +56,7 @@ header {
 }
 
 header.sticky {
+  border-bottom: 1px solid white;
   position: fixed;
   left: 0;
   top: 0;
@@ -572,17 +573,40 @@ header button[aria-expanded="true"] span::after {
 
 /* Start vision section */
 .our-vision {
-  padding: 20px;
+  padding: 150px 100px;
   background-color: var(--main-color);
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1150px) {
+  .our-vision {
+    padding: 150px 10px;
+  }
 }
 
 .our-vision .container ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  color: white;
+  gap: 30px;
+}
+
+.our-vision .container ul li {
+  border: 3px solid white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top-style: dashed;
 }
 
 .our-vision .container ul li img {
-  width: 100%;
+  width: 100px;
+}
+
+.our-vision .container ul li h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 /* End vision section */
 
