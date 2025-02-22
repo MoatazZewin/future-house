@@ -1,5 +1,6 @@
 const btnToggle = document.getElementById("btn-toggle");
 const headerList = document.getElementById("header-list");
+const buttonUp = document.getElementsByClassName("up-button")[0];
 
 btnToggle.addEventListener("click", () => {
   btnToggle.ariaExpanded = !JSON.parse(btnToggle.ariaExpanded);
@@ -49,6 +50,12 @@ window.addEventListener("scroll", () => {
     buttonSpan.style.setProperty("--after-color", "rgb(117 27 31)");
     ul.style.setProperty("--color-scroll", "rgb(117 27 31)");
     lang.classList.remove("scroll");
+  }
+
+  if (+window.scrollY > 200) {
+    buttonUp.classList.add("top");
+  } else {
+    buttonUp.classList.remove("top");
   }
 });
 

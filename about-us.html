@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <!-- Start header -->
@@ -39,64 +43,72 @@
         <img src="images/landing-2.png" alt="photo" />
       </div>
 
-      <div class="container">
-        <div class="content">
-          <h3>Our Project</h3>
-          <div class="about-1">
-            <div class="left">
-              <div>
-                <img src="images/about-us-1.png" alt="photo" />
-              </div>
+      <!-- Start explore section -->
+      <div class="about-us-section">
+        <div class="container">
+          <div class="content">
+            <div class="left" data-aos="fade-left" data-aos-duration="1000">
+              <img src="images/expert-1.png" alt="photo" />
             </div>
-            <div class="right">
-              <h4>Project one</h4>
+            <div class="right" data-aos="fade-right" data-aos-duration="500">
+              <span>about us</span>
+              <h4>Future House</h4>
               <p>
-                Future House Investment and Real Estate Development Company
+                Future House Investment and Real Estate Development Company,
                 owned by Engineer Romany Andraws, is a pioneering force in
                 Egypt's real estate development sector. Established in 2008, our
-                mission is to deliver luxurious sustainablelifestyles through a
-                diverse portfolio of projects.
+                mission is to deliver luxurious, sustainable lifestyles through
+                a diverse portfolio of projects.
               </p>
-              <a href="#">read more <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
 
-          <div class="about-1 reverse">
-            <div class="left">
-              <div>
-                <img src="images/about-us-1.png" alt="photo" />
-              </div>
-            </div>
-            <div class="right">
-              <h4>Project one</h4>
               <p>
-                Future House Investment and Real Estate Development Company
-                owned by Engineer Romany Andraws, is a pioneering force in
-                Egypt's real estate development sector. Established in 2008, our
-                mission is to deliver luxurious sustainablelifestyles through a
-                diverse portfolio of projects.
+                With over 22 years of expertise in consulting and development,
+                Future House has successfully launched and expanded numerous
+                projects, including large-scale developments in new urban
+                cities. Our portfolio encompasses residential, commercial, and
+                administrative projects.
               </p>
-              <a href="#">read more <i class="fa-solid fa-arrow-right"></i></a>
+
+              <p>
+                Future House has achieved remarkable success, executing over 150
+                projects comprising luxury apartments, villas, and commercial
+                and administrative developments, such as Future Mall 1 and
+                Future Mall 2. This showcases our company's long-standing
+                independence and resilience.
+              </p>
+
+              <p>
+                Despite challenges facing Egypt's real estate market, we at
+                Future House are confident in our ability to overcome them. Our
+                distinguished team of experts, innovative design and execution
+                approach, and commitment to excellence enable us to build not
+                just properties, but a better future."
+              </p>
+              <a href="#">read more</a>
             </div>
           </div>
-
-          <article class="gallery">
-            <img src="images/values.png" alt="photo" />
-            <img src="images/mission.png" alt="photo" />
-            <img src="images/vision.png" alt="photo" />
-          </article>
         </div>
+      </div>
+      <!-- End explore section -->
+
+      <div class="container">
+        <div class="content"></div>
         <div class="our-team">
-          <h2>OUR TEAM</h2>
+          <h2 data-aos="fade-right" data-aos-duration="500">OUR TEAM</h2>
           <div class="ceo-memeber">
-            <img src="images/ceo.png" alt="photo" />
-            <div class="text">
+            <img
+              src="images/ceo.png"
+              alt="photo"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            />
+            <div class="text" data-aos="fade-left" data-aos-duration="500">
               <h3>eng.romany andraws</h3>
               <p>president & chairman of board</p>
             </div>
           </div>
 
-          <div class="content-team">
+          <div class="content-team" data-aos="fade-up" data-aos-duration="500">
             <h3>BIOGRAPHY</h3>
             <p>
               Engineer Romany Andrawas is the Founder and principal of Future
@@ -114,7 +126,11 @@
             </p>
           </div>
 
-          <div class="content-team second">
+          <div
+            class="content-team second"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <h3>eng.romany andraws</h3>
             <p class="title">vice president & chief executive officer (CEO)</p>
             <p>BIOGRAPHY</p>
@@ -141,6 +157,7 @@
     <!-- End footer section -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
