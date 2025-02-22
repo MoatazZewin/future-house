@@ -183,7 +183,7 @@ header ul li::before {
   bottom: 15px;
   transition: transform 0.5s ease;
   width: 100%;
-  background-color: var(--color-scroll, "rgb(117 27 31)");
+  background-color: var(--color-scroll, rgb(117 27 31));
   transform-origin: right center;
 }
 
@@ -551,7 +551,7 @@ header button[aria-expanded="true"] span::after {
 
 /* Start button up */
 .up-button {
-  display: flex;
+  display: none;
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -563,6 +563,10 @@ header button[aria-expanded="true"] span::after {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.up-button.top {
+  display: flex;
 }
 
 .up-button i {
@@ -947,6 +951,20 @@ header button[aria-expanded="true"] span::after {
   cursor: pointer;
   text-transform: uppercase;
 }
+
+.our-address {
+  padding: 30px;
+  text-align: center;
+}
+
+.our-address h3 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.our-address iframe {
+  width: 100% !important;
+}
 /* End contact page */
 
 /* Start about us page */
@@ -963,13 +981,6 @@ header button[aria-expanded="true"] span::after {
 
 .about-landing article.gallery img {
   width: 100%;
-}
-
-.about-landing .container .content {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 80px;
 }
 
 @media (max-width: 950px) {
@@ -1020,11 +1031,6 @@ header button[aria-expanded="true"] span::after {
 
 .about-landing .container .content .right h4 {
   font-size: 1.5rem;
-}
-
-.about-landing .container .content .right a {
-  color: var(--main-color);
-  text-transform: capitalize;
 }
 
 @media (max-width: 990px) {
