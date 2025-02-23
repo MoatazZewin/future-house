@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +7,11 @@
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- main css template file  -->
-    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- Start header -->
@@ -43,7 +43,7 @@
     <!-- Start contact section -->
     <div class="contact-form">
       <div class="container">
-        <div class="left">
+        <div class="left" data-aos="fade-up" data-aos-duration="500">
           <h3>Lets Chat</h3>
           <p>
             if you are interested in working on a 1:1 copy project together,
@@ -53,7 +53,7 @@
           <i class="fa-solid fa-envelope"></i>
         </div>
 
-        <div class="right">
+        <div class="right" data-aos="fade-up" data-aos-duration="500">
           <form action="">
             <div class="first-last">
               <input type="text" name="first-name" placeholder="First Name" />
@@ -132,7 +132,7 @@
 
     <div class="footer-end">2023 company</div>
     <!-- End footer section -->
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="contact-us.js"></script>
   </body>
 </html>
