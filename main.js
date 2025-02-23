@@ -2,6 +2,18 @@ const btnToggle = document.getElementById("btn-toggle");
 const headerList = document.getElementById("header-list");
 const buttonUp = document.getElementsByClassName("up-button")[0];
 
+const btnLang = document.getElementsByClassName("lang")[0];
+
+btnLang.addEventListener("click", () => {
+  if (document.documentElement.dir == "rtl") {
+    document.documentElement.dir = "ltr";
+    btnLang.textContent = "EN";
+  } else {
+    document.documentElement.dir = "rtl";
+    btnLang.textContent = "AR";
+  }
+});
+
 btnToggle.addEventListener("click", () => {
   btnToggle.ariaExpanded = !JSON.parse(btnToggle.ariaExpanded);
   headerList.classList.toggle("show");
