@@ -103,7 +103,7 @@ header .lang {
   align-items: center;
   font-size: 1.5rem;
   padding-inline-start: 15px;
-  border-left: 1px solid var(--main-color);
+  border-inline-start: 1px solid var(--main-color);
   color: var(--main-color);
 }
 
@@ -115,7 +115,7 @@ header .lang.scroll {
 header .container > ul {
   display: flex;
   width: 70%;
-  margin-left: auto;
+  margin-inline-start: auto;
   justify-content: space-around;
   transition: all 0.4s ease-out;
   gap: 20px;
@@ -1221,12 +1221,13 @@ header button[aria-expanded="true"] span::after {
   line-height: 1.5;
   padding-bottom: 10px;
   position: relative;
+  display: flex;
 }
 
 .content-project .project-description ul li::before {
   content: "";
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   height: 70px;
   width: 6px;
   background-color: var(--main-color);
@@ -1235,7 +1236,7 @@ header button[aria-expanded="true"] span::after {
 .content-project .project-description ul li::after {
   content: attr(data-number);
   position: absolute;
-  left: -40px;
+  inset-inline-start: -40px;
   top: 0;
   font-size: 4rem;
   color: var(--main-color);
@@ -1253,3 +1254,182 @@ header button[aria-expanded="true"] span::after {
 }
 
 /* End project page */
+
+/* Start projects page */
+.project-landing {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.project-landing::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to left, #00000038, #000c);
+  z-index: 3;
+  height: 100%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.project-landing img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
+
+.project-landing h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-transform: capitalize;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+
+.projects-content {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.projects-content .container {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .projects-content .container {
+    flex-direction: column;
+  }
+}
+
+.projects-content .container .left {
+  width: 30%;
+}
+
+@media (max-width: 900px) {
+  .projects-content .container .left {
+    width: 100%;
+  }
+}
+
+.projects-content .container .left .contact-us {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.projects-content .container .left .contact-us img {
+  width: 100%;
+}
+
+.projects-content .container .left .contact-us svg {
+  margin-top: 30px;
+}
+
+.projects-content .container .left .contact-us h4 {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  position: relative;
+  width: 100%;
+}
+
+.projects-content .container .left .contact-us h4::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -140px;
+  left: 0;
+  height: 50px;
+  background-color: white;
+  transform: skewY(-8deg);
+}
+
+.projects-content .container .left .contact-us p {
+  font-size: 0.7rem;
+  color: #787878;
+}
+
+.projects-content .container .left .contact-us a {
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  background: linear-gradient(to right, rgb(117 27 31 / 83%), rgb(117 27 31));
+  color: white;
+}
+
+.projects-content .container .left ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.projects-content .container .left ul li {
+  padding: 10px 0;
+}
+
+.projects-content .container .left ul li a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.projects-content .container .left ul li a i {
+  font-size: 10px;
+}
+
+.projects-content .container .right {
+  width: 60%;
+  flex-grow: 1;
+}
+
+@media (max-width: 900px) {
+  .projects-content .container .right {
+    width: 100%;
+  }
+}
+
+.projects-content .container .right img {
+  width: 100%;
+  border: 15px solid white;
+}
+
+.projects-content .container .right iframe {
+  width: 100%;
+}
+
+.projects-content .container .right p {
+  font-size: 0.8rem;
+  color: #787878;
+  margin-bottom: 30px;
+}
+
+.projects-album .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fill, 150px);
+  gap: 10px;
+  margin-bottom: 100px;
+  grid-auto-rows: 150px;
+}
+
+.projects-album img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* End projects page */
